@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'mobileSlider';
+  config: SwiperOptions = {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 0,
+    direction: 'vertical',
+    slidesPerView: 1,
+    speed: 1000,
+    nested: true,
+    effect: 'slide',
+    mousewheelControl: true,
+    autoplay: 100,
+  };
 }

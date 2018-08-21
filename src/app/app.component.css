@@ -1,0 +1,64 @@
+swiper {
+  width: 100%;
+  height: 421px;
+  margin: 20px 0;
+  /*border: 1px solid #ccc;*/
+  position: relative;
+  top: 100px;
+}
+
+/*.swiper-slide {*/
+/*background-color: lightgray;*/
+/*}*/
+
+.swiper-container-layer {
+  position: relative;
+}
+
+.img-layer {
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+.img {
+  background-image: url("/assets/img/Iphone.png");
+  background-size: 320px 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px !important;
+  width: 320px !important;
+  position: relative !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.swiper-body {
+}
+
+.content-div {
+  display: flex;
+  height: 60vh;
+  width: 77%;
+}
+
+.content-div p {
+  margin: auto;
+  line-height: 1.9rem;
+  font-size: 16px;
+  color: #383636;
+}
+
+.inner-img img {
+  width: 100%;
+}
+
+.inner-img {
+  width: 271px;
+  height: 420px;
+  position: relative;
+  z-index: 9;
+  top: 0px;
+  left: 74px;
+  overflow: hidden;
+}
