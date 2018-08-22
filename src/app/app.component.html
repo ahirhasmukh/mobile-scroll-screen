@@ -1,22 +1,26 @@
 <router-outlet></router-outlet>
 
+<!--<div class="extra-section">-->
+  <!--<div>this is extra section</div>-->
+<!--</div>-->
+
 <div class="swiper-container-layer">
   <div class="img-layer">
     <div class="img"></div>
   </div>
   <swiper [config]="config" class="swiper-body">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="row">
+      <div class="swiper-slide" #slide1Ref>
+        <div class="row" *ngIf="slide1Ref.classList.contains('swiper-slide-active')">
           <div class="col-md-6">
             <div class="inner-img">
-              <img src="assets/img/3.jpg" />
+              <img src="assets/img/3.jpg" class="animated slideInLeft"/>
             </div>
           </div>
           
           <div class="col-md-6">
             <div class="content-div">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              <p class="animated pulse">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
                 into
@@ -28,17 +32,17 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="row">
+      <div class="swiper-slide" #slide2Ref>
+        <div class="row" *ngIf="slide2Ref.classList.contains('swiper-slide-active')">
           <div class="col-md-6">
             <div class="inner-img">
-              <img src="assets/img/2.jpg" />
+              <img src="assets/img/2.jpg" class="animated slideInRight"/>
             </div>
           </div>
           
           <div class="col-md-6">
             <div class="content-div">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              <p class="animated pulse">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
                 into
@@ -50,17 +54,17 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="row">
+      <div class="swiper-slide" #slide3Ref>
+        <div class="row" *ngIf="slide3Ref.classList.contains('swiper-slide-active')">
           <div class="col-md-6">
             <div class="inner-img">
-              <img src="assets/img/1.jpg" />
+              <img src="assets/img/1.jpg" class="animated bounceIn"/>
             </div>
           </div>
           
           <div class="col-md-6">
             <div class="content-div">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              <p class="animated pulse">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
                 into
@@ -85,3 +89,7 @@
     <!-- Add Arrows -->
   </swiper>
 </div>
+
+<!--<div class="extra-section wow slideInLeft">-->
+  <!--<div>this is extra section</div>-->
+<!--</div>-->
