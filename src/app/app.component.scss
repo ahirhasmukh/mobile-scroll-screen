@@ -49,6 +49,7 @@
         width: 271px;
         height: 420px;
         position: relative;
+        background-color: #d7f5ff;
         z-index: 9;
         top: 0;
         left: 74px;
@@ -67,11 +68,13 @@
           }
         }
         .list-view {
+          background-color: #ffffff;
+          padding: 0 25px;
           h2 {
-            margin-top: 20px;
+            margin-top: 15px;
             font-size: 17px;
             font-weight: 500;
-            margin-bottom: 11px;
+            margin-bottom: 15px;
             li {
               list-style-type: none;
               margin: 5px;
@@ -104,4 +107,8 @@
       }
     }
   }
+}
+
+.clearfix {
+  clear: both;
 }
