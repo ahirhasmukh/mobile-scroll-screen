@@ -1,81 +1,83 @@
 .extra-section {
   width: 100%;
   display: flex;
-  height: 100vh;
-}
-
-.extra-section div {
-  margin: auto;
-}
-
-swiper {
-  width: 100%;
-  height: 421px;
-  margin: 20px 0;
-  /*border: 1px solid #ccc;*/
-  position: relative;
-  top: 100px;
-}
-
-/*.swiper-slide {*/
-/*background-color: lightgray;*/
-/*}*/
+  height: 100vh; }
+  .extra-section div {
+    margin: auto; }
 
 .swiper-container-layer {
-  position: relative;
-}
+  position: relative; }
+  .swiper-container-layer .img-layer {
+    position: absolute;
+    top: 0;
+    left: 50px; }
+    .swiper-container-layer .img-layer .img {
+      background-image: url("/assets/img/Iphone.png");
+      background-size: 320px 600px;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 600px !important;
+      width: 320px !important;
+      position: relative !important;
+      margin-left: auto !important;
+      margin-right: auto !important; }
+  .swiper-container-layer swiper {
+    width: 100%;
+    height: 421px;
+    margin: 20px 0;
+    /*border: 1px solid #ccc;*/
+    position: relative;
+    top: 100px; }
+    .swiper-container-layer swiper .swiper-slide .content-div {
+      display: flex;
+      height: 60vh;
+      width: 77%; }
+      .swiper-container-layer swiper .swiper-slide .content-div p {
+        margin: auto;
+        line-height: 1.9rem;
+        font-size: 16px;
+        color: #383636; }
+    .swiper-container-layer swiper .swiper-slide .inner-img {
+      width: 271px;
+      height: 420px;
+      position: relative;
+      z-index: 9;
+      top: 0;
+      left: 74px;
+      overflow: hidden; }
+      .swiper-container-layer swiper .swiper-slide .inner-img .row {
+        display: block; }
+        .swiper-container-layer swiper .swiper-slide .inner-img .row .col-md-6 {
+          float: left;
+          width: 50%;
+          box-sizing: border-box; }
+        .swiper-container-layer swiper .swiper-slide .inner-img .row .col-md-12 {
+          float: left;
+          width: 100%;
+          box-sizing: border-box; }
+      .swiper-container-layer swiper .swiper-slide .inner-img .list-view h2 {
+        margin-top: 20px;
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 11px; }
+        .swiper-container-layer swiper .swiper-slide .inner-img .list-view h2 li {
+          list-style-type: none;
+          margin: 5px; }
+      .swiper-container-layer swiper .swiper-slide .inner-img .mobile-section {
+        width: 100%; }
+        .swiper-container-layer swiper .swiper-slide .inner-img .mobile-section .user-image-section img {
+          margin: 12px 17px; }
+        .swiper-container-layer swiper .swiper-slide .inner-img .mobile-section .total-section {
+          margin: 15px 5px; }
+          .swiper-container-layer swiper .swiper-slide .inner-img .mobile-section .total-section label {
+            display: block;
+            font-size: 17px;
+            font-weight: 500;
+            color: #000000; }
+          .swiper-container-layer swiper .swiper-slide .inner-img .mobile-section .total-section span {
+            font-size: 18px;
+            color: gray;
+            font-weight: 500;
+            display: block; }
 
-.img-layer {
-  position: absolute;
-  top: 0;
-  left: 50px;
-}
-
-.img {
-  background-image: url("/assets/img/Iphone.png");
-  background-size: 320px 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 600px !important;
-  width: 320px !important;
-  position: relative !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.swiper-body {
-}
-
-.content-div {
-  display: flex;
-  height: 60vh;
-  width: 77%;
-}
-
-.content-div p {
-  margin: auto;
-  line-height: 1.9rem;
-  font-size: 16px;
-  color: #383636;
-}
-
-.inner-img {
-  width: 271px;
-  height: 420px;
-  position: relative;
-  z-index: 9;
-  top: 0px;
-  left: 74px;
-  overflow: hidden;
-}
-
-.inner-img img {
-  width: 100%;
-}
-
-/*.swiper-slide{*/
-  /*opacity: 0;*/
-/*}*/
-/*.swiper-slide.swiper-slide-active{*/
-  /*opacity: 1;*/
-/*}*/
+/*# sourceMappingURL=app.component.css.map */
